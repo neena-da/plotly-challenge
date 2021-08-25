@@ -36,16 +36,16 @@ function optionChanged(value)
         type: "bar",
         orientation: 'h'
       };
-      // Create the data array for our plot
+      // 6. Create the data array for our plot
       var barData = [barTrace];
             
-      // Define our plot layout
+      // 7. Define our plot layout
       var barLayout = {
         title: "Top 10 Bacteria Cultures Found",
         yaxis: {autorange:"reversed"}
       };
       
-      // Plot the chart to a div tag with id "bar-plot"
+      // 8. Plot the chart to a div tag with id "bar-plot"
       Plotly.newPlot("bar", barData, barLayout);
 
       // Belly button washing frequency
